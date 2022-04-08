@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旭食品公式オンラインショップ　楽天市場店</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <script>
+    $(function(){
+        $('a[href^="#"]').click(function() {
+        var speed = 500;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+        });
+    });
+    </script>
+</head>
+<body style="margin:0;padding:0;">
+
+
+
+<div id="side_search">
+    <p class="side_search_text">検索</p>
+
+    <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" accept-charset="EUC-JP" target="_top">
+    <input value="6" type="hidden" name="sv">
+    <input value="406639" type="hidden" name="sid">
+    <input value="asahiponzu" type="hidden" name="asahiponzu">
+    <input value="旭ポンズ楽天市場店" type="hidden" name="su">
+    <input value="A" type="hidden" name="f">
+    <input type="text" name="sitem" class="text" placeholder="">
+    <input value="&#xf002;" type="submit" class="btn search-button" alt="検索">
+    </form>
+</div>
+
+
+
+<div class="category side_title">
+    <img src="https://www.rakuten.ne.jp/gold/asahiponzu/img/side_category.png" alt="">
+    <a href=""><p><span class="triangle"></span>喰べてびっくり旭ポンズ</p></a>
+    <a href=""><p><span class="triangle"></span>旭食品おすすめ食べ比べ</p></a>
+    <a href=""><p><span class="triangle"></span>ポンズ食べ比べセット</p></a>
+    <a href=""><p class="text_small"><span class="triangle"></span>市場であまり見かけない?!レアセット</p></a>
+    <a href=""><p><span class="triangle"></span>全種類１０本セット</p></a>
+    <a href=""><p><span class="triangle"></span>全種類２０本セット</p></a>
+
+
+    <!-- <table>
+        <tr><td>■<a href="https://item.rakuten.co.jp/asahiponzu/c/"><font color="#e14d25">カテゴリトップ</font></a></td></tr>
+        <tr><td>├<a href="https://item.rakuten.co.jp/asahiponzu/c/0000000002/"><font color="#e14d25">旭ポンズ</font></a></td></tr>
+        <tr><td>└<a href="https://item.rakuten.co.jp/asahiponzu/c/0000000003/"><font color="#e14d25">セット</font></a></td></tr>
+    </table> -->
+</div>
+
+
+<div class="side_img side_title">
+    <img src="https://www.rakuten.ne.jp/gold/asahiponzu/img/side_osusume_contents.png" alt="">
+    <img src="https://www.rakuten.ne.jp/gold/asahiponzu/img/side_open_bn.png" alt="">
+    <img src="https://www.rakuten.ne.jp/gold/asahiponzu/img/side_recipe_bn.png" alt="">
+    <img src="https://www.rakuten.ne.jp/gold/asahiponzu/img/side_kodawari_bn.png" alt="">
+</div>
+
+</body>
+</html>
