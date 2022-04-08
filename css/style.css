@@ -1,0 +1,755 @@
+@charset "utf-8";
+
+/* common */
+@font-face {
+    font-family: '秀英丸ゴシックBold';
+    src: url(../font/AP-OTF-ShueiMGoStd-B.otf);
+}
+@font-face {
+    font-family: '秀英丸ゴシックLignt';
+    src: url(../font/AP-OTF-ShueiMGoStd-L.otf);
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    font-family: '秀英丸ゴシックLignt';
+}
+
+h1 {
+    display: inline-block;
+    margin: 0;
+}
+h2 {
+    display: inline-block;
+    margin: 0;
+    color: #E14D25;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+a {
+    color: #E14D25;
+    text-decoration: none;
+}
+
+.box {
+    margin-top: 60px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+section {
+    width: 100%;
+    overflow: hidden;
+}
+.container_box {
+    background: url('../img/bg.png?1');
+    background-repeat: repeat;
+}
+.c_btn {
+    width: 23%;
+}
+
+.w100 {
+    width: 100%;
+    margin: auto;
+}
+.flex {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+}
+.flex_about {
+    -webkit-box-pack: center;
+	-ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+	-ms-flex-align: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+span.h2 {
+    font-size: 32px;
+    font-family: '秀英丸ゴシックBold';
+}
+
+
+
+/* header */
+header {
+    padding-top: 10px;
+}
+.header_box {
+    display: block;
+    text-align: center;
+}
+.logo_search_cart_box {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+	-ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+	-ms-flex-align: center;
+    align-items: center;
+}
+
+img.logo {
+    width: 85%;
+}
+
+.header_right_box {
+    text-align: center;
+}
+
+
+/* 楽天メニュー */
+.rakuten_menu {
+    display: flex;
+    display:-webkit-box;
+    display:-ms-flexbox;
+
+    -webkit-box-pack: left;
+	-ms-flex-pack: left;
+    justify-content: left;
+
+    -webkit-box-align: flex-end;
+	-ms-flex-align: flex-end;
+    align-items: flex-end;
+
+    margin-bottom: 15px;
+}
+.rakuten_menu p{
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0;
+    color: #8D8888;
+    font-family: '秀英丸ゴシックLignt';
+}
+
+.rakuten_menu a:nth-child(1), .rakuten_menu a:nth-child(2), .rakuten_menu a:nth-child(3), .rakuten_menu a:nth-child(4), .rakuten_menu a:nth-child(5) {
+    border-right: 2px solid #8D8888;
+}
+.rakuten_menu.off {
+    display: none;
+}
+
+
+
+/* 検索 */
+#search {
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#search .text {
+    width: 225px;
+    height: 45px;
+    border:4px solid #E14D25;
+    border-radius:10px;
+    text-indent:10px;
+    font-size: 12px;
+}
+
+
+#search .btn {
+    background-color:rgba(0,0,0,0);
+    height: 35px;
+    width: 35px;
+    border:none;
+    margin-left: -50px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+
+
+
+/* お買い物かご */
+.btn_cart {
+    width: 20%;
+    vertical-align: middle;
+}
+
+
+/* 旭食品メニュー */
+.asahi_menu {
+    height: 110px;
+    background: #E14D25;
+    padding: 5px 0 0 0;
+    margin-top: 20px;
+
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+	-ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+	-ms-flex-align: center;
+    align-items: center;
+}
+.asahi_menu a {
+    padding: 0 1em;
+    margin: 0 10px;
+}
+.asahi_menu img {
+    width: 100%;
+}
+
+
+
+/* メインビジュアルスライダー */
+.swiper-container {
+    position: relative; /* ← swiper.cssに含まれています */
+  }
+
+  .swiper-container:before {
+    content: "";
+    display: block;
+    padding-top: calc(9/16*75%);
+  }
+
+  .swiper-wrapper {
+    position: absolute; /* ← swiper.cssと優先順位が干渉するときは工夫してください */
+    top: 0;
+    left: 0;
+  }
+
+  .swiper-wrapper img {
+      width: 100%;
+      height: auto;
+  }
+  .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 0 0 10px !important;
+}
+.swiper-pagination-bullet-active {
+    background:#E77453!important;
+}
+.swiper-pagination {
+    margin-top: 40px!important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -40px!important;
+}
+
+
+
+
+
+
+.osusume_img {
+    padding-top: 80px;
+    width: 100%;
+}
+
+.section_1 {
+    padding-bottom: 60px;
+}
+.osusume_box {
+    text-align: center;
+}
+.osusume_box img {
+    width: 40%;
+    margin: 10px;
+}
+
+.item_box {
+    text-align: center;
+}
+.item_box img {
+    margin-top: 40px;
+    width: 60%;
+}
+.section2_img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+/* みんなのレシピ　旭ポンズ調理例 */
+.section_3 {
+    margin: 20% 0;
+}
+.section_3 .recipi_title {
+    width: 100%;
+}
+.section_3 .recipi_title.sp {
+    display: none;
+}
+
+.recipi_flex {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+	-ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+	-ms-flex-align: center;
+    align-items: center;
+}
+.recipi_box {
+    margin: 80px 0;
+}
+.recipi_box img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+/*========= ページトップのためのCSS ===============*/
+/*リンクの形状*/
+#fixed_btn a{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 30vh;
+  height: 12vh;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size:0.6rem;
+  transition:all 0.3s;
+}
+
+
+#fixed_btn {
+  position: fixed;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+#fixed_btn.UpMove{
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+  transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+#fixed_btn.DownMove{
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+    opacity: 1;
+  transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+  transform: translateX(300px);
+  }
+}
+#fixed_btn a img {
+    width: 100%;
+}
+
+footer{
+    position: relative;
+    background: #E14D25;
+    padding: 40px 0 0 0;
+  }
+
+
+.about img {
+    width: 95%;
+}
+
+
+.page_top_text {
+    background: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+}
+.page_top_text p {
+    color: #e14d25;
+}
+
+.footer_logo {
+    text-align: center;
+    position: relative;
+    bottom: -4vh;
+}
+
+.search-button {
+    border: none;  background: none;  outline: none;
+    color: #999;  font-weight: 900;  font-family: "Font Awesome 5 Free";
+
+    transition: color 0.3s ease 0s;
+}
+
+
+/* サイドバー */
+.side_img img {
+    width: 100%;
+}
+.category img {
+    width: 100%;
+}
+.side_title {
+    margin: 20px 0 0 0;
+}
+
+
+
+/* サイドバー検索 */
+#side_search {
+    width: 100%;
+    height: 155px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #E77454;
+    text-align: center;
+}
+#side_search .text {
+    width: 225px;
+    height: 45px;
+    border:4px solid #ffffff;
+    border-radius:50px;
+    text-indent:10px;
+    font-size: 12px;
+}
+
+#side_search .btn {
+    background-color:rgba(0,0,0,0);
+    height: 35px;
+    width: 35px;
+    border:none;
+    margin-left: -50px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+
+.side_search_text {
+    color: #ffffff;
+    font-family: '秀英丸ゴシックBold';
+    font-size: 29px;
+    margin: 10px 0 0 0;
+}
+
+
+.category p {
+    font-family: '秀英丸ゴシックBold';
+    color: #63312E;
+    margin: 15px 0;
+    padding: 10px;
+    border:4px solid #E2A696;
+    border-radius:50px;
+}
+
+.triangle:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f04b';
+    font-weight: 900;
+    color: #63312E;
+    padding: 0 10px 0 15px;
+}
+.category a {
+    color: #63312E;
+}
+
+.category a:hover {
+
+}
+
+.text_small {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 100%;
+    }
+    .rakuten_menu {
+        position: unset;
+    }
+    .asahi_menu {
+        height: 80px;
+    }
+    .asahi_menu a {
+        margin: 0;
+        padding: 0 0.5em;
+    }
+    .asahi_menu img {
+        width: 100%;
+    }
+    .osusume_img {
+        padding-top: 30px;
+    }
+    .osusume_box img {
+        width: 90%;
+    }
+    .recipi_flex {
+        flex-wrap: wrap;
+    }
+
+    .top_modoru_img {
+        width: 80%;
+    }
+    footer {
+        margin-top: 5px;
+    }
+    .box {
+        margin-top: 10px;
+    }
+    .rakuten_menu p{
+        font-size: 9px;
+        padding: 9px;
+    }
+    #search .text {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .logo_search_cart_box {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: block;
+    }
+    h1 {
+        margin: 0 5px;
+        text-align: left;
+        width: 70%;
+    }
+    h2 {
+        font-size: 13px;
+    }
+    span.h2 {
+        font-size: 18px;
+    }
+    #search .btn {
+        width: 35px;
+        height: 28px;
+    }
+    .header_right_box {
+        text-align: center;
+    }
+    #search {
+        padding: 0 10px 0 0;
+        width: 57%;
+    }
+    .btn_cart {
+        width: 35%;
+        vertical-align: middle;
+    }
+    section .c_btn {
+        width: 50%;
+    }
+
+
+    #fixed_btn {
+        position: fixed;
+        right: 0;
+    }
+    .item_box img {
+        width: 80%;
+    }
+    .section_1 {
+        padding-bottom: 40px;
+    }
+    .section_2 img {
+        margin-bottom: 20px;
+    }
+    .recipi_title {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    .recipi_box {
+        margin: 20px 0;
+        width: 50%;
+    }
+    .about img {
+        width: 100%;
+        margin: 0;
+    }
+    .flex_about {
+        flex-wrap: wrap;
+    }
+    .flex_about a {
+        width: 45%;
+        margin: 5px;
+    }
+    .footer_logo a img {
+        width: 40%;
+    }
+    .recipi_box img {
+        width: 88%;
+    }
+    .section_3 .recipi_title.sp {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 830px) {
+    .rakuten_menu.off {
+        display: block;
+    }
+    .rakuten_menu.on {
+        display: none;
+    }
+    .logo_search_cart_box {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c_btn {
+        width: 30%;
+    }
+    h2 {
+        display: block;
+    }
+    .asahi_menu a {
+        margin: 0;
+    }
+    .osusume_box img {
+        width: 46%;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .section_3 {
+        margin: 40% 0;
+    }
+    #fixed_btn a {
+        width: 20vh;
+        height: 7vh;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .rakuten_menu p {
+        padding: 5px;
+    }
+
+    #search .btn {
+        top: 9.1vh;
+        right: 13.5vh;
+    }
+    .section_3 {
+        margin: 0 0;
+    }
+    footer {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .rakuten_menu p {
+        padding: 9px;
+    }
+    .logo_search_cart_box {
+        display: block;
+    }
+    .header_right_box {
+        text-align: center;
+    }
+    .asahi_menu {
+        height: 70px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1184px) {
+    h2 {
+        font-size: 1em;
+    }
+    span.h2 {
+        font-size: 1.5em;
+    }
+}
+
+
